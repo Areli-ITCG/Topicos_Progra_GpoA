@@ -9,7 +9,7 @@ public class PanelDatosA extends JPanel implements ActionListener
   JRadioButton amigo, conocido;
   ManejoPersona datos = new ManejoPersona();
   
-  public PanelDatosB()
+  public PanelDatosA()
   {
     setLayout(new GridLayout(5,2));
     JLabel lblNombre = new JLabel("Nombre: ", JLabel.RIGHT);
