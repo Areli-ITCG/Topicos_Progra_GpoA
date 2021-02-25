@@ -8,6 +8,7 @@ public class PanelDatosA extends JPanel implements ActionListener
   private JTextField txtNombre, txtApellidos, txtTelefono;
   private JRadioButton amigo, conocido;
   ManejoPersona mpA = new ManejoPersona();
+    JFrameMostrar jfm;
   
   public PanelDatosA()
   {
@@ -36,7 +37,7 @@ public class PanelDatosA extends JPanel implements ActionListener
      
      btnAceptar = new JButton("Guardar");
      btnAceptar.addActionListener(this);
-     btnCancelar = new JButton("Cancelar");
+     btnCancelar = new JButton("Mostrar");
      btnCancelar.addActionListener(this);
     
     add(btnAceptar);
@@ -75,8 +76,7 @@ public class PanelDatosA extends JPanel implements ActionListener
       }
 		
       if (e.getSource()==btnCancelar) {
-         mpA.mostrar();
-			System.exit(0);
+          jfm = new JFrameMostrar();
 		}
 	}
 }
