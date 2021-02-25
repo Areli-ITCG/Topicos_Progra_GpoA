@@ -16,6 +16,11 @@ public class ManejoPersona
     objPersona.setTipo(tipo);
     Arrperson.add(objPersona);//Agrega el objeto al arraylist
    }
+	
+  public ArrayList datos()
+   {
+     return Arrperson;
+   }
    
    public void mostrar()
    {
