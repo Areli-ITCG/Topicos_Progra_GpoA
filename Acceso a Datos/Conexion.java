@@ -1,3 +1,5 @@
+import java.sql.*;
+
 public class Conexion {
     Statement stmt = null;
     Connection conect = null;
